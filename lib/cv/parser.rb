@@ -1,5 +1,5 @@
 require 'rexml/document'
-require_relative 'objectmodel'
+require_relative 'object_model'
 
 module Cv
 
