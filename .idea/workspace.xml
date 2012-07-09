@@ -31,10 +31,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pdf_generator.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pdf_generator.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/cv/pdf_generator.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="90" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
+            <state line="11" column="68" selection-start="156" selection-end="156" vertical-scroll-proportion="0.402746">
               <folding />
             </state>
           </provider>
@@ -52,25 +52,16 @@
       <file leaf-file-name="object_model.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/cv/object_model.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="24" selection-start="2090" selection-end="2090" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parser.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="parser.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/cv/parser.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="92" selection-start="303" selection-end="303" vertical-scroll-proportion="0.37383178">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PauloMouatResume.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/PauloMouatResume.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="56" selection-start="635" selection-end="635" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -90,14 +81,14 @@
         <option value="$PROJECT_DIR$/lib/cv/rtf_generator.rb" />
         <option value="$PROJECT_DIR$/lib/cv/generator.rb" />
         <option value="$PROJECT_DIR$/lib/cv/object_model.rb" />
+        <option value="$PROJECT_DIR$/lib/cv/parser.rb" />
         <option value="$PROJECT_DIR$/data/PauloMouatResume.xml" />
         <option value="$PROJECT_DIR$/lib/cv/pdf_generator.rb" />
-        <option value="$PROJECT_DIR$/lib/cv/parser.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="158" />
+    <option name="x" value="224" />
     <option name="y" value="22" />
     <option name="width" value="1100" />
     <option name="height" value="808" />
@@ -309,7 +300,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="158" y="22" width="1100" height="808" extended-state="0" />
+    <frame x="224" y="22" width="1100" height="808" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -398,30 +389,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cv/pdf_generator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="90" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/PauloMouatResume.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="56" selection-start="635" selection-end="635" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/cv/object_model.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="24" selection-start="2090" selection-end="2090" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/cv/parser.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="92" selection-start="303" selection-end="303" vertical-scroll-proportion="0.37383178">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/PauloMouatResume.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="34" selection-start="16427" selection-end="16427" vertical-scroll-proportion="0.26746988">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cv/pdf_generator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="68" selection-start="156" selection-end="156" vertical-scroll-proportion="0.402746">
           <folding />
         </state>
       </provider>

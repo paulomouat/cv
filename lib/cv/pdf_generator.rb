@@ -9,23 +9,54 @@ module Cv
     attr_reader :cv_document
     attr_reader :pdf
 
+    DPI = 72
+
     def initialize(filename, cv_document)
       @filename = filename
       @cv_document = cv_document
     end
 
     def generate
-      @pdf = Prawn::Document.new(:margin => [72 * 0.75, 72 * 0.75, 72 * 0.75, 72 * 0.8])
-      pdf.font "Times-Roman"
-      pdf.font_size 11
-      pdf.default_leading 1
+      @pdf = Prawn::Document.new(:margin => get_margins)
+      apply_global_formatting(pdf)
       write_contact_data
       write_profile_data
       write_employment_data
       write_technical_skills_data
       write_education_data
       write_other_sections_data
+      apply_page_numbers(pdf)
       pdf.render_file filename
+    end
+
+    private
+
+    def get_margins
+      left_margin = DPI * 0.75
+      right_margin = DPI * 0.75
+      top_margin = DPI * 0.75
+      bottom_margin = DPI * 1
+      [top_margin, right_margin, bottom_margin, left_margin]
+    end
+
+    def apply_global_formatting(pdf)
+      pdf.font "Times-Roman"
+      pdf.font_size 11
+      pdf.default_leading 1
+    end
+
+    def apply_page_numbers(pdf)
+      options = {}
+      options[:page_filter] = lambda { |page_number| page_number > 1 }
+      options[:start_count_at] = 2
+      options[:at] = [pdf.bounds.right - 200, -20]
+      options[:width] = 200
+      options[:align] = :right
+      pdf.font("Helvetica") do
+        pdf.font_size(9) do
+          pdf.number_pages "Resume - #{cv_document.contact.name} - <page>", options
+        end
+      end
     end
 
     def write_blank_line
@@ -33,12 +64,12 @@ module Cv
     end
 
     def write_section_title(title)
-      write_blank_line
-      pdf.font_size(13) do
-        pdf.text title, :style => :bold
-      end
-      pdf.font_size(8) do
-        write_blank_line
+      pdf.pad_top(12) do
+        pdf.pad_bottom(7) do
+          pdf.font_size(13) do
+            pdf.text title, :style => :bold
+          end
+        end
       end
     end
 
@@ -94,19 +125,23 @@ module Cv
     def write_period_data(period)
       entry_title = "#{period.start}-#{period.end}: #{period.location}"
       pdf.text entry_title, :style => :bold
-      period.plain_items.each { |item| write_plain_item item }
+      period.items.each { |item| write_plain_item item }
     end
 
     def write_other_sections_data
       cv_document.other_sections.sections.each do |section|
         write_section_title section.name
-        section.plain_items.each { |item| write_plain_item item }
+        section.items.each { |item| write_plain_item item }
       end
     end
 
     def write_bullet_item(item)
       pdf.indent(35) do
-        pdf.text_box "•", :at => [-18, pdf.cursor]
+        pdf.float do
+          pdf.indent(-18) do
+            pdf.text "•"
+          end
+        end
         pdf.text item
       end
     end

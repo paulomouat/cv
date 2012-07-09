@@ -76,9 +76,9 @@ module Cv
       start = xml.attributes["start"]
       _end = xml.attributes["end"]
       location = xml.attributes["location"]
-      plain_items = []
-      xml.elements.each("PlainItem") { |item| plain_items.push item.text }
-      Period.new(start, _end, location, plain_items)
+      items = []
+      xml.elements.each("Item") { |item| items.push item.text }
+      Period.new(start, _end, location, items)
     end
   end
 
@@ -93,9 +93,9 @@ module Cv
   class Section
     def self.build(xml)
       name = xml.attributes["name"]
-      plain_items = []
-      xml.elements.each("PlainItem") { |item| plain_items.push item.text }
-      Section.new(name, plain_items)
+      items = []
+      xml.elements.each("Item") { |item| items.push item.text }
+      Section.new(name, items)
     end
   end
 
