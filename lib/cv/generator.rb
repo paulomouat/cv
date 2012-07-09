@@ -11,4 +11,4 @@ cv = Cv::CvDocument.build(cv_xml)
 pdf_generator = Cv::PdfGenerator.new("output.pdf", cv)
 pdf_generator.generate
 
-puts cv
+`open output.pdf`

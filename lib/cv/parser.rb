@@ -3,13 +3,14 @@ require_relative 'object_model'
 
 module Cv
 
-  class Candidate
+  class Contact
     def self.build(xml)
       name = xml.attributes["name"]
-      contact_xml = xml.elements["ContactInfo"]
-      address = contact_xml.attributes["address"]
-      email = contact_xml.attributes["email"]
-      Candidate.new(name, address, email)
+      contact_info_xml = xml.elements["ContactInfo"]
+      address = contact_info_xml.attributes["address"]
+      state = contact_info_xml.attributes["state"]
+      email = contact_info_xml.attributes["email"]
+      Contact.new(name, address, state, email)
     end
   end
 
@@ -108,8 +109,8 @@ module Cv
 
   class CvDocument
     def self.build(xml)
-      candidate_xml = xml.elements["Candidate"]
-      candidate = Candidate.build(candidate_xml)
+      contact_xml = xml.elements["Contact"]
+      contact = Contact.build(contact_xml)
       profile_xml = xml.elements["Profile"]
       profile = Profile.build(profile_xml)
       employment_xml = xml.elements["Employment"]
@@ -120,7 +121,7 @@ module Cv
       education = Education.build(education_xml)
       other_sections_xml = xml.elements["OtherSections"]
       other_sections = OtherSections.build(other_sections_xml)
-      CvDocument.new(candidate, profile, employment, technical_skills, education, other_sections)
+      CvDocument.new(contact, profile, employment, technical_skills, education, other_sections)
     end
   end
 

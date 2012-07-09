@@ -1,13 +1,15 @@
 module Cv
 
-  class Candidate
+  class Contact
     attr_reader :name
     attr_reader :address
+    attr_reader :state
     attr_reader :email
 
-    def initialize(name, address, email)
+    def initialize(name, address, state, email)
       @name = name
       @address = address
+      @state = state
       @email = email
     end
   end
@@ -120,15 +122,15 @@ module Cv
   end
 
   class CvDocument
-    attr_reader :candidate
+    attr_reader :contact
     attr_reader :profile
     attr_reader :employment
     attr_reader :technical_skills
     attr_reader :education
     attr_reader :other_sections
 
-    def initialize(candidate, profile, employment, technical_skills, education, other_sections)
-      @candidate = candidate
+    def initialize(contact, profile, employment, technical_skills, education, other_sections)
+      @contact = contact
       @profile = profile
       @employment = employment
       @technical_skills = technical_skills
