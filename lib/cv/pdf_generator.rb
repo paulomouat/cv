@@ -29,7 +29,7 @@ module Cv
       pdf.render_file filename
     end
 
-    private
+  private
 
     def get_margins
       left_margin = DPI * 0.75

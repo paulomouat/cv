@@ -1,0 +1,4 @@
+#!/usr/bin/ruby
+require 'cv/runner'
+runner = Cv::Runner.new(ARGV)
+runner.run

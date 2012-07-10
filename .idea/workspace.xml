@@ -34,7 +34,16 @@
       <file leaf-file-name="pdf_generator.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/cv/pdf_generator.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="68" selection-start="156" selection-end="156" vertical-scroll-proportion="0.402746">
+            <state line="31" column="2" selection-start="621" selection-end="621" vertical-scroll-proportion="0.38554215">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="options.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/cv/options.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="6" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -83,6 +92,9 @@
         <option value="$PROJECT_DIR$/lib/cv/object_model.rb" />
         <option value="$PROJECT_DIR$/lib/cv/parser.rb" />
         <option value="$PROJECT_DIR$/data/PauloMouatResume.xml" />
+        <option value="$PROJECT_DIR$/bin/cv" />
+        <option value="$PROJECT_DIR$/bin/cv.py" />
+        <option value="$PROJECT_DIR$/lib/cv/options.rb" />
         <option value="$PROJECT_DIR$/lib/cv/pdf_generator.rb" />
       </list>
     </option>
@@ -166,6 +178,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -410,9 +436,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cv/options.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="6" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/cv/pdf_generator.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="68" selection-start="156" selection-end="156" vertical-scroll-proportion="0.402746">
+        <state line="31" column="2" selection-start="621" selection-end="621" vertical-scroll-proportion="0.38554215">
           <folding />
         </state>
       </provider>
