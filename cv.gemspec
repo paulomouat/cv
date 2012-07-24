@@ -14,4 +14,8 @@ Gem::Specification.new do |gem|
   gem.name          = "cv"
   gem.require_paths = ["lib"]
   gem.version       = Cv::VERSION
+
+  gem.add_dependency 'prawn'
+  gem.add_dependency 'builder'
+  gem.add_dependency 'stylish'
 end
