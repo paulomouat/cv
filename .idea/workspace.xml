@@ -25,7 +25,7 @@
       <file leaf-file-name="generator.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/cv/generator.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="32" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
+            <state line="6" column="25" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -61,25 +61,25 @@
       <file leaf-file-name="pdf_generator.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/cv/pdf_generator.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="150" column="7" selection-start="619" selection-end="4048" vertical-scroll-proportion="0.0">
+            <state line="124" column="63" selection-start="3395" selection-end="3395" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="html_generator.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="html_generator.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/cv/html_generator.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="2" selection-start="0" selection-end="31" vertical-scroll-proportion="0.0">
+            <state line="180" column="42" selection-start="5165" selection-end="5165" vertical-scroll-proportion="6.9397593">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="txt_generator.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="txt_generator.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/cv/txt_generator.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="35" selection-start="2467" selection-end="2467" vertical-scroll-proportion="3.8168674">
+            <state line="40" column="34" selection-start="894" selection-end="894" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -115,11 +115,11 @@
         <option value="$PROJECT_DIR$/lib/cv/options.rb" />
         <option value="$PROJECT_DIR$/../professional-homepage/upload.sh" />
         <option value="$PROJECT_DIR$/../professional-homepage/excludefiles.txt" />
-        <option value="$PROJECT_DIR$/lib/cv/html_generator.rb" />
         <option value="$PROJECT_DIR$/lib/cv/markdown_generator.rb" />
         <option value="$PROJECT_DIR$/lib/cv/rtf_generator.rb" />
-        <option value="$PROJECT_DIR$/lib/cv/generator.rb" />
         <option value="$PROJECT_DIR$/lib/cv/txt_generator.rb" />
+        <option value="$PROJECT_DIR$/lib/cv/generator.rb" />
+        <option value="$PROJECT_DIR$/lib/cv/html_generator.rb" />
       </list>
     </option>
   </component>
@@ -508,30 +508,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cv/html_generator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="2" selection-start="0" selection-end="31" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/cv/pdf_generator.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="7" selection-start="619" selection-end="4048" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cv/generator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="32" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
+        <state line="124" column="63" selection-start="3395" selection-end="3395" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/cv/txt_generator.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="35" selection-start="2467" selection-end="2467" vertical-scroll-proportion="3.8168674">
+        <state line="40" column="34" selection-start="894" selection-end="894" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cv/generator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="25" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cv/html_generator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="180" column="42" selection-start="5165" selection-end="5165" vertical-scroll-proportion="6.9397593">
           <folding />
         </state>
       </provider>

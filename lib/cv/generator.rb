@@ -10,11 +10,15 @@ xml = REXML::Document.new(f)
 cv_xml = xml.root
 cv = Cv::CvDocument.build(cv_xml)
 
-#pdf_generator = Cv::PdfGenerator.new("output.pdf", cv)
-#pdf_generator.generate
+pdf_generator = Cv::PdfGenerator.new("output.pdf", cv)
+pdf_generator.generate
 
 txt_generator = Cv::TxtGenerator.new("output.txt", cv)
 txt_generator.generate
 
+html_generator = Cv::HtmlGenerator.new("output.html", cv)
+html_generator.generate
+
 `open output.pdf`
 `open output.txt`
+`open output.html`

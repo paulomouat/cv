@@ -41,7 +41,7 @@ module Cv
       if indent > 0
         indented = ""
         result.lines.each do |line|
-          indent.times { |i| indented << " " }
+          indented << ' ' * indent
           indented << line
         end
         result = indented
