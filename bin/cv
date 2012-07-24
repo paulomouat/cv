@@ -1,4 +1,16 @@
 #!/usr/bin/ruby
-require 'cv/runner'
+
+begin
+    require 'cv'
+    require 'prawn'
+    require 'builder'
+    require 'stylish'
+rescue LoadError
+    require 'rubygems'
+    require 'cv'
+    require 'prawn'
+    require 'builder'
+    require 'stylish'
+end
 runner = Cv::Runner.new(ARGV)
 runner.run
