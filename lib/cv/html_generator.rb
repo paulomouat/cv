@@ -10,12 +10,9 @@ module Cv
     attr_reader :cv_document
     attr_reader :html
 
-    def initialize(filename, cv_document)
+    def generate(filename, cv_document)
       @filename = filename
       @cv_document = cv_document
-    end
-
-    def generate
       @html = Builder::XmlMarkup.new(:indent => 4)
       html.declare! :DOCTYPE, :HTML, :PUBLIC, "-//W3C//DTD HTML 4.01 Transitional//EN", "http://www.w3.org/TR/html4/loose.dtd"
       html.html do

@@ -2,8 +2,9 @@ require 'optparse'
 
 module Cv
   class Options
-    attr_reader :xml_resume
-    attr_reader :output_filename
+    attr_reader :input_file
+    attr_reader :output_file
+    attr_reader :format_spec
 
     def initialize(argv)
       parse(argv)
@@ -13,9 +14,15 @@ module Cv
 
     def parse(argv)
       OptionParser.new do |opts|
-        opts.banner = "Usage: anagram [ options ] word..."
-        opts.on("-d", "--dict path", String, "Path to dictionary") do |dict|
-          @dictionary = dict
+        opts.banner = "Usage: cv -i input_file -f format_spec -o output_file"
+        opts.on("-i", "--input input_file", String, "The XML file to use as input") do |input_file|
+          @input_file = input_file
+        end
+        opts.on("-f", "--format format_spec", String, "The format for the output file") do |format_spec|
+          @format_spec = format_spec
+        end
+        opts.on("-o", "--output output_file", String, "The output file") do |output_file|
+          @output_file = output_file
         end
         opts.on("-h", "--help", "Show this message") do
           puts opts

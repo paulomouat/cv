@@ -10,12 +10,9 @@ module Cv
     LINE_LENGTH = 80
     INDENT = 4
 
-    def initialize(filename, cv_document)
+    def generate(filename, cv_document)
       @filename = filename
       @cv_document = cv_document
-    end
-
-    def generate
       @txt = ""
       write_contact_data
       write_profile_data

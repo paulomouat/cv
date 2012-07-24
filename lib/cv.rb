@@ -1,4 +1,4 @@
-require "cv"
+require "cv/runner"
 require "cv/version"
 
 module Cv

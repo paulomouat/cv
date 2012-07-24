@@ -11,12 +11,9 @@ module Cv
 
     DPI = 72
 
-    def initialize(filename, cv_document)
+    def generate(filename, cv_document)
       @filename = filename
       @cv_document = cv_document
-    end
-
-    def generate
       @pdf = Prawn::Document.new(:margin => get_margins)
       apply_global_formatting(pdf)
       write_contact_data

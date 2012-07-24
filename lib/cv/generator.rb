@@ -5,20 +5,30 @@ require_relative 'pdf_generator'
 require_relative 'txt_generator'
 require_relative 'html_generator'
 
-f = File.open("../../data/PauloMouatResume.xml")
-xml = REXML::Document.new(f)
-cv_xml = xml.root
-cv = Cv::CvDocument.build(cv_xml)
+module Cv
 
-pdf_generator = Cv::PdfGenerator.new("output.pdf", cv)
-pdf_generator.generate
+  class Generator
+    attr_reader :input_file
+    attr_reader :output_file
+    attr_reader :format
+    attr_reader :generators
 
-txt_generator = Cv::TxtGenerator.new("output.txt", cv)
-txt_generator.generate
+    def initialize(input_file, output_file, format)
+      @input_file = input_file
+      @output_file = output_file
+      @format = format
+      @generators = { "pdf" => PdfGenerator.new, "html" => HtmlGenerator.new, "txt" => TxtGenerator.new }
+    end
 
-html_generator = Cv::HtmlGenerator.new("output.html", cv)
-html_generator.generate
+    def generate
+      f = File.open(input_file)
+      xml = REXML::Document.new(f)
+      cv_xml = xml.root
+      cv = Cv::CvDocument.build(cv_xml)
 
-`open output.pdf`
-`open output.txt`
-`open output.html`
+      generator = generators[format]
+
+      generator.generate output_file, cv
+    end
+  end
+end
