@@ -1,3 +1,4 @@
+require 'cv/generator'
+
 module Cv
-  # Your code goes here...
 end
