@@ -54,6 +54,41 @@ module Cv
       #html.style :type => "text/css" do
       #  html << style.to_s
       #end
+      html << '            <style type="text/css">
+                .contact-name
+                {
+                    font-weight:bold;
+                    text-align:center;
+                }
+                .contact-info
+                {
+                    text-align:center;
+                }
+                .company-header
+                {
+                    font-weight:bold;
+                }
+                .skill-header
+                {
+                    font-weight:bold;
+                }
+                .period-header
+                {
+                    font-weight:bold;
+                }
+                body
+                {
+                    width:800px;
+                }
+                ul
+                {
+                    margin-top:0px;
+                    margin-bottom:0px;
+                    padding-top:0px;
+                    padding-bottom:0px;
+                }
+            </style>
+'
     end
 
     def write_body
