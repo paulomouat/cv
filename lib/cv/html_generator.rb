@@ -1,7 +1,7 @@
 #encoding: utf-8
 
 require 'builder'
-require 'stylish'
+# require 'stylish'
 
 module Cv
 
@@ -35,25 +35,25 @@ module Cv
     end
 
     def write_stylesheet
-      style = Stylish.generate do
-        rule ".contact-name", font_weight: "bold", text_align: "center"
-        rule ".contact-info", text_align: "center"
-        rule ".company-header", font_weight: "bold"
-        rule ".skill-header", font_weight: "bold"
-        rule ".period-header", font_weight: "bold"
-        rule "body", width: "800px"
-        rule "ul", margin_top: "0px", margin_bottom: "0px", padding_top: "0px", padding_bottom: "0px"
-      end
+      #style = Stylish.generate do
+      #  rule ".contact-name", font_weight: "bold", text_align: "center"
+      #  rule ".contact-info", text_align: "center"
+      #  rule ".company-header", font_weight: "bold"
+      #  rule ".skill-header", font_weight: "bold"
+      #  rule ".period-header", font_weight: "bold"
+      #  rule "body", width: "800px"
+      #  rule "ul", margin_top: "0px", margin_bottom: "0px", padding_top: "0px", padding_bottom: "0px"
+      #end
 
-      indent = ' ' * 8
-      style.rules.each do |rule|
-        rule.format = "#{indent}%s\n#{indent}{\n#{indent}    %s\n#{indent}}\n"
-        rule.declarations.format = "\n#{indent}    "
-      end
+      #indent = ' ' * 8
+      #style.rules.each do |rule|
+      #  rule.format = "#{indent}%s\n#{indent}{\n#{indent}    %s\n#{indent}}\n"
+      #  rule.declarations.format = "\n#{indent}    "
+      #end
 
-      html.style :type => "text/css" do
-        html << style.to_s
-      end
+      #html.style :type => "text/css" do
+      #  html << style.to_s
+      #end
     end
 
     def write_body

@@ -17,5 +17,5 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'prawn'
   gem.add_dependency 'builder'
-  gem.add_dependency 'stylish'
+  gem.add_dependency 'ionfish-stylish'
 end
