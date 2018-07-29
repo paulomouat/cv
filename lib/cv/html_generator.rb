@@ -54,38 +54,72 @@ module Cv
       #html.style :type => "text/css" do
       #  html << style.to_s
       #end
-      html << '            <style type="text/css">
+      html << '
+          <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet"/>
+          <style type="text/css">
                 .contact-name
                 {
-                    font-weight:bold;
-                    text-align:center;
+                    font-family: "Libre Franklin", Helvetica, Arial, Sans-Serif;
+                    font-weight: bold;
+                    font-size: large;
+                    text-align: center;
                 }
                 .contact-info
                 {
-                    text-align:center;
+                    text-align: center;
                 }
                 .company-header
                 {
-                    font-weight:bold;
+                    font-family: "Libre Franklin", Helvetica, Arial, Sans-Serif;
+                    font-size: large;
+                    font-weight: bold;
+                    margin-top: 2ex;
+                }
+                .project-header
+                {
+                    font-family: "Libre Franklin", Helvetica, Arial, Sans-Serif;
+                    font-weight: bold;
+                    font-size: medium;
+                    color: rgb(101, 101, 101);
+                    margin-top: 1ex;
                 }
                 .skill-header
                 {
-                    font-weight:bold;
+                    font-family: "Libre Franklin", Helvetica, Arial, Sans-Serif;
+                    font-weight: bold;
+                    margin-top: 1ex;
                 }
                 .period-header
                 {
-                    font-weight:bold;
+                    font-family: "Libre Franklin", Helvetica, Arial, Sans-Serif;
+                    font-weight: bold;
+                    margin-top: 1ex;
                 }
                 body
                 {
-                    width:800px;
+                    font-family: "Assistant", sans-serif;
+                    font-size: 13pt;
+                    line-height: 150%;
+                    color: rgb(71, 71, 71);
+                    max-width: 50em;
+                }
+                h3
+                {
+                    font-family: "Libre Franklin", Helvetica, Arial, Sans-Serif;
+                    font-weight: bold;
+                    font-size: x-large;
+                    margin-top: 2ex;
+                    margin-bottom: 2ex;
                 }
                 ul
                 {
-                    margin-top:0px;
-                    margin-bottom:0px;
-                    padding-top:0px;
-                    padding-bottom:0px;
+                    color: rgb(101, 101, 101);
+                    list-style-type: square;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
                 }
             </style>
 '
