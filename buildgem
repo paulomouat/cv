@@ -1,0 +1,2 @@
+gem build cv.gemspec
+gem install cv-0.0.1.gem

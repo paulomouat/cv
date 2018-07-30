@@ -1,0 +1,29 @@
+1. wkhtmltopdf
+
+This is a command-line utility that converts HTML to PDF, preserving styles. Download and install the binary version of wkhtmltopdf from https://wkhtmltopdf.org/downloads.html
+
+2. Build and install the cv gem
+
+> ./buildgem
+
+...or, as individual steps:
+
+> gem build cv.gemspec
+
+Output:
+
+Successfully built RubyGem
+  Name: cv
+  Version: 0.0.1
+  File: cv-0.0.1.gem
+
+> gem install cv-0.0.1.gem
+
+Output:
+
+Successfully installed cv-0.0.1
+Parsing documentation for cv-0.0.1
+Done installing documentation for cv after 0 seconds
+1 gem installed
+
+3. Done

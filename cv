@@ -1,0 +1,9 @@
+cv -i data/PauloMouatResume.xml -f txt -o PauloMouatResume.txt
+#cv -i data/PauloMouatResume.xml -f pdf -o PauloMouatResume.pdf
+cv -i data/PauloMouatResume.xml -f html -o PauloMouatResume.html
+
+# on MacBook Pro
+wkhtmltopdf -s Letter -T 19 -B 25 -L 19 -R 19 --footer-html footer-helper.html --footer-spacing 5 -d 72 --zoom 8 PauloMouatResume.html PauloMouatResume.pdf
+
+# on iMac Pro
+wkhtmltopdf -s Letter -T 19 -B 25 -L 19 -R 19 --footer-html footer-helper.html --footer-spacing 5 -d 72 PauloMouatResume.html PauloMouatResume.pdf
