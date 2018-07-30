@@ -17,7 +17,7 @@ module Cv
       @input_file = input_file
       @output_file = output_file
       @format = format
-      @generators = { "pdf" => PdfGenerator.new, "html" => HtmlGenerator.new, "txt" => TxtGenerator.new }
+      @generators = { "html" => HtmlGenerator.new, "txt" => TxtGenerator.new, "pdf" => PdfGenerator.new }
     end
 
     def generate

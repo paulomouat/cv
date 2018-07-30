@@ -1,6 +1,7 @@
 #encoding: utf-8
 
 require 'prawn'
+#require 'pdfkit'
 
 module Cv
 
@@ -11,6 +12,12 @@ module Cv
 
     DPI = 72
 
+    def generate(filename, cv_document)
+      #p "filename: " << filename
+      #kit = PDFKit.new(File.new('PauloMouatResume.html'), :page_size => 'Letter')
+      #outfile = kit.to_file('PauloMouatResume2.pdf')
+    end
+=begin
     def generate(filename, cv_document)
       @filename = filename
       @cv_document = cv_document
@@ -25,7 +32,7 @@ module Cv
       apply_page_numbers(pdf)
       pdf.render_file filename
     end
-
+=end
   private
 
     def get_margins
