@@ -1,0 +1,12 @@
+General command-line usage is as follows:
+
+    cv -i <input file> -f <format spec> -o <output file>
+
+where
+
+_input file_ is the XML file containing the resume data, e.g. `input.xml`.
+_format spec_ is one of `txt`, `html` or `pdf`.
+_output file_ is the file that will be generated with the output, e.g. `output.txt`.
+
+
+Note: A ./cv script is also provided to conveniently invoke the cv gem and directly transform the input file data/PauloMouatResume.xml into txt, html and pdf.
