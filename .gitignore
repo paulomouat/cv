@@ -1,6 +1,8 @@
-PauloMouatResume.html
-PauloMouatResume.pdf
-PauloMouatResume.txt
-PauloMouatResume.xml
+._*
+Gemfile.lock
+PauloMouatResume*.html
+PauloMouatResume*.pdf
+PauloMouatResume*.txt
+PauloMouatResume*.xml
 cv
 !lib/cv
