@@ -1,7 +1,8 @@
-PauloMouatResume.html
-PauloMouatResume.pdf
-PauloMouatResume.txt
-PauloMouatResume.xml
-*.gem
-*.lock
-data
+._*
+Gemfile.lock
+PauloMouatResume*.html
+PauloMouatResume*.pdf
+PauloMouatResume*.txt
+PauloMouatResume*.xml
+cv
+!lib/cv
