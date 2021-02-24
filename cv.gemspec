@@ -8,7 +8,9 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Generate a resume in PDF, HTML or TXT based on an XML file}
   gem.homepage      = "https://github.com/paulomouat/cv/"
 
-  gem.files         = `git ls-files`.split($\)
+  gem.files         = `git ls-files`.split($\).reject do |f|
+    f.match /cv-0.0.1.gem/
+  end
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "cv"
